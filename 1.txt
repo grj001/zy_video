@@ -1,0 +1,15 @@
+req.getSession().setAttribute("adminRes", adminRes);
+//登陆时直接把学科名,放入Session中
+		List<Subject> sub = ss.findAllSubjectName();
+		req.getSession().setAttribute("listSubject", sub);
+		//登陆时直接把课程名,放入Session中
+		List<Course> cou = cs.findAllCourse();
+		req.getSession().setAttribute("listCourse", cou);
+		//登陆时直接把主讲人姓名,放入Session域中
+		List<Speaker> spe = sks.findAllSpeaker();
+		req.getSession().setAttribute("listSpeaker", spe);
+		
+		
+		
+		
+"\n\n\n\n\n\n\n\n\n"+
